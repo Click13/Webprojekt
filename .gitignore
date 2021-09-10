@@ -9,12 +9,13 @@ syntax: glob
 *.class
 *~
 *.bak
-#*.off
+*.off
 *.old
 
 .settings
 .classpath
 
+.idea
 target
 build
 null
