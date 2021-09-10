@@ -1,0 +1,50 @@
+#footer{
+    background-color: #831b69;/* TODO Farbe ändern */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+}
+
+#header{
+    background-color: #050b42;/* TODO Farbe ändern */
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+}
+
+#login_button{
+    background-color: #FF0099;
+    margin-right: 0px;
+    margin-left: auto;
+    width: 150px;
+}
+
+#registration_button{
+    background-color: #00FF99;
+    width: 100px;
+}
+
+#content{
+    padding-bottom: 2em;
+    padding-top: 100px;
+}
+
+html, body {
+    background-color: #90f113;
+    height: 100%;
+}
+
+label{
+    display: block;
+}
+
+input[type='submit'],
+label{
+    margin-top: 1rem;
+}
