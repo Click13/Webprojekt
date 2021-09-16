@@ -56,6 +56,18 @@
             Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. 
             Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. 
             Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+            <h2>
+                Kontaktformular:
+            </h2>
+            Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
+            <form>
+                <textarea name="Nachricht" id="Kontaktformular_Nachricht" required placeholder="Ihre Nachricht"></textarea>
+                <label for="Checkbox_Kontaktformular">Ich habe die Datenschutzbestimmungen gelesen.</label>
+                <input type="checkbox" name="Datenschutz_Kontaktformular" id="Checkbox_Kontaktformular" value="Datenschutzbestimmungen gelesen" required>
+                <label for="Kontaktadresse">Ihre Mailadresse:</label>
+                <input id="Kontaktadresse" name="Kontaktadresse" type="email" required>
+                <input id="submitKontaktformular" type="submit" value="absenden" onclick="kontaktformularVerarbeiten()">
+            </form>
          </div>
         <!-- footer für Referenz auf Impressum und Datenschutz! -->
         <div id="footer">

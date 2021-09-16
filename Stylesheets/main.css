@@ -51,8 +51,15 @@
     list-style: none;
 }
 
+#search_header{
+    background-color: #009955;
+    float: center;
+    margin-left: 300px;
+    padding-top: 0px;
+}
+
 html, body {
-    background-color: #90f113;
+    background-color: #FFFFFF;
     height: 100%;
 }
 

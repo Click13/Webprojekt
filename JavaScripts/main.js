@@ -41,3 +41,13 @@ function resetPassword(){
         window.alert("Dein Passwort ist: ");
         }
 }
+
+function sucheProjekt(){
+    var projektname = document.getElementById(search_header).value;
+}
+
+function kontaktformularVerarbeiten(){
+    var mailadresse = document.getElementById(Kontaktadresse).value;
+    var nachricht = document.getElementById(Kontaktformular_Nachricht).value;
+    window.alert("Nachricht: " + nachricht +"; Adresse: " + mailadresse);
+}

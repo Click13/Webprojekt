@@ -9,8 +9,20 @@
     </head>
     <body>
         <div id="header">
-            <a href="./index.html"><img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="100%" width="auto"></a><!--Logo -->
-            <div id="login_button"><a href="./login.html" target="_self">Login</a></div>
+            <a href="./index.html" target="_self">
+                <img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="100%" width="auto"><!--Logo -->
+            </a>
+            <!--
+            <div>
+            <input type="text" id="search_header" placeholder="Projektsuche" title="Projektnamen eingeben" width="auto" height="80px" required>
+            <button type="submit" onclick="sucheProjekt()">
+                <img src="">
+            </button>
+            </div>
+            -->
+            <div id="login_button">
+                <a href="./login.html" target="_self">Login</a>
+            </div>
         </div>
         <div id="content">
             <h1>
@@ -28,8 +40,14 @@
                 Es wurde für dich entwickelt und ist auf deine Bedürfnisse zugeschnitten!
             </div>
             <div id="bildergalerie">
-                <iframe src="./dia.html" scrolling="no" width="100%" height="60%" frameborder="0" framespacing="0"></iframe>
+                <iframe src="./dia.html" scrolling="no" width="100%" height="auto" frameborder="0" framespacing="0"></iframe>
             </div>
+            <!-- Videoführung einbinden? -->
+            <!--
+            <video width="" height="" controls autoplay>
+                <source src="" type="">
+            </video>
+            -->
         </div>
         <!-- footer für Referenz auf Impressum und Datenschutz! -->
         <div id="footer">
