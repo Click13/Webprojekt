@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <link href="./Stylesheets/main.css" rel="stylesheet">
-    <title>MyTicket - Passwort vergessen</title>
-</head>
-<body>
-<div id="header">
-    <a href="./index.html"><img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="auto" width="100px"></a><!--Logo -->
-    <div id="login_button"><a href="./login.html" alt="Login">Login</a></div>
-</div>
-<div id="content">
-    <div>
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username">
-    </div>
-    <input type="submit" value="Passwort zurücksetzen">
-</div>
-<!-- TODO add footer für Referenz auf Impressum und Datenschutz! -->
-<div id="footer">
-    <ul>
-        <li>
-            <a href="./datenschutz.html" alt="Link zur Datenschutzerklärung und Cookies"> Datenschutz und Cookies</a>
-        </li>
-        <li>
-            <a href="./impressum.html" alt="Link zum Impressum">Impressum</a>
-        </li>
-    </ul>
-</div>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <link href="./Stylesheets/main.css" rel="stylesheet">
+        <title>MyTicket - Passwort vergessen</title>
+        <script src="./JavaScripts/main.js"></script>
+    </head>
+    <body>
+        <div id="header">
+            <a href="./index.html"><img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="100%" width="auto"></a><!--Logo -->
+            <div id="login_button"><a href="./login.html" target="_self">Login</a></div>
+        </div>
+        <div id="content">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <button id="button_reset_password" onclick="resetPassword()">
+                Passwort zurücksetzen
+            </button>
+        </div>
+        <!-- footer für Referenz auf Impressum und Datenschutz! -->
+        <div id="footer">
+            <ul id="footer_list">
+                <li>
+                    <a href="./datenschutz.html" alt="Link zur Datenschutzerklärung und Cookies"> Datenschutz und Cookies</a>
+                </li>
+                <li>
+                    <a href="./impressum.html" alt="Link zum Impressum">Impressum</a>
+                </li>
+            </ul>
+        </div>
+    </body>
 </html>

@@ -21,7 +21,9 @@
     background-color: #FF0099;
     margin-right: 0px;
     margin-left: auto;
+    margin-top: 50px;
     width: 150px;
+    float: right;
 }
 
 #registration_button{
@@ -29,9 +31,24 @@
     width: 100px;
 }
 
-#content{
-    padding-bottom: 2em;
-    padding-top: 2em;
+#button_login{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#button_reset_password{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#content{}
+
+#indexpage_first_Text{
+    padding-bottom: 10px;
+}
+
+#footer_list{
+    list-style: none;
 }
 
 html, body {

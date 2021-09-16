@@ -4,12 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0;" />
         <link href="./Stylesheets/main.css" rel="stylesheet" type="text/css">
-        <title>TickIt - Welcomepage</title>
+        <title>TickIt - Welcome</title>
+        <script src="./JavaScripts/main.js"></script>
     </head>
     <body>
         <div id="header">
-            <a href="./index.html"><img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="auto" width="100px"></a><!--Logo -->
-            <div id="login_button"><a href="./login.html" alt="Login">Login</a></div>
+            <a href="./index.html"><img src="./Bilder/Logo_MyTicket.jpeg" alt="Logo von MyTicket" height="100%" width="auto"></a><!--Logo -->
+            <div id="login_button"><a href="./login.html" target="_self">Login</a></div>
         </div>
         <div id="content">
             <h1>
@@ -19,11 +20,11 @@
             <div id="registration_button">
                 <a href="./registrationPage.html" alt="hier registrieren">Registrieren</a>
             </div>
-            <div>
+            <div id="indexpage_first_Text">
                 <h1>
                     Was ist MyTicket?
                 </h1>
-                MyTicket ist dein aktivitätsverwaltungstool!<br>
+                MyTicket ist dein Aktivitätsverwaltungstool!<br>
                 Es wurde für dich entwickelt und ist auf deine Bedürfnisse zugeschnitten!
             </div>
             <div id="bildergalerie">
@@ -32,7 +33,7 @@
         </div>
         <!-- footer für Referenz auf Impressum und Datenschutz! -->
         <div id="footer">
-            <ul>
+            <ul id="footer_list">
                 <li>
                     <a href="./datenschutz.html" alt="Link zur Datenschutzerklärung und Cookies"> Datenschutz und Cookies</a>
                 </li>
