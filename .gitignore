@@ -1,47 +1,40 @@
-/target/
-
-.cache-main
-.cache-tests
-
-# use glob syntax.
-syntax: glob
-*.ser
+/gradle/wrapper/gradle-wrapper.properties
+##----------Android----------
+# build
+*.apk
+*.ap_
+*.dex
 *.class
+bin/
+gen/
+build/
+out/
+
+# gradle
+.gradle/
+gradle-app.setting
+!gradle-wrapper.jar
+build/
+
+local.properties
+
+##----------idea----------
+*.iml
+.idea/
+*.ipr
+*.iws
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+##----------Other----------
+# osx
 *~
-*.bak
-*.off
-*.old
+.DS_Store
+gradle.properties
 
-.settings
-.classpath
+.vscode
 
-.idea
-target
-build
-null
-tmp*
-temp*
-dist
-test-output
-build.log
+*.log
 
-.svn
-.CVS
-.hg*
-
-build.log
-
-.cache*
-dependency-reduced-pom.xml
-
-_testOutput
-output
-/keystore/
-
-/.project
-/.vscode
-/node_modules
-
-*.png
-*.gif
-*.jpg
+/target
