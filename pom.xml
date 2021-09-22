@@ -12,7 +12,7 @@
 
     <groupId>com.Click13</groupId>
     <artifactId>webprogrammierung</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
     <name>Webprogrammierung</name>
     <packaging>jar</packaging>
 
