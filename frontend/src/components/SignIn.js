@@ -1,6 +1,8 @@
 import React, { Component } from "react";
-import '../css/Login.css'
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import '../css/Login.css'
+import '../css/Navbar.css'
 
 export default class Login extends Component {
     render() {
@@ -43,7 +45,7 @@ export default class Login extends Component {
                         <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
                     </div>
                 </div>
-                <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
+                <button type="submit" className=" button btn">Login</button>
                 <p className="forgot-password text-right">
                     <Link className="nav-link" to={"/reset-password"}> Forgot password?</Link>
                     <Link className="nav-link" to={"/sign-up"}>Not registered yet?</Link>
@@ -52,7 +54,25 @@ export default class Login extends Component {
             </div>
             </div>
             </div>
+            <nav className="navbar navbar-expand-lg navbar-light fixed-bottom">
+              <div className="container">
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                      <Link className="nav-link" to={"/impressum"}>Impressum |</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to={"/datenschutz"}>Datenschutzerklärung |</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to={"/gesch-bdg"}>Allgemeine Geschäftsbedingungen</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
             </div>
+            
         );
     }
 }
