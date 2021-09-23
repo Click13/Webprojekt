@@ -1,10 +1,26 @@
 import React, { Component } from "react";
 import '../css/Login.css'
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export default class SignUp extends Component {
     render() {
         return (
-
+            <div className="App">
+            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+              <div className="container">
+                <Link className="navbar-brand" to={"/Main"}>MyTicket</Link>
+                <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+                  <ul className="navbar-nav ml-auto">
+                    <li className="nav-item">
+                      <Link className="nav-link" to={"/sign-in"}>Sign in</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" to={"/sign-up"}>Sign up</Link>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
             <div className="App">
             <div className="outer">
             <div className="inner">
@@ -32,10 +48,11 @@ export default class SignUp extends Component {
                 </div>
 
                 <button type="submit" className="btn btn-dark btn-lg btn-block">Register</button>
-                <p className="forgot-password text-right">
-                    Already registered <a href="#">log in?</a>
+                <p className="forgot-password text-right ">
+                <Link className="nav-link" to={"/sign-in"}>Already registered, log in?</Link>
                 </p>
             </form>
+            </div>
             </div>
             </div>
             </div>
