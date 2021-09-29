@@ -8,7 +8,6 @@ import FormHelperText from '@mui/material/FormHelperText';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
-import Avatar from '@mui/material/Avatar';
 
 
 export default class Impressum extends Component {
@@ -83,34 +82,23 @@ export default class Impressum extends Component {
                 Kontaktformular:
             </h2>
             Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
-            <Box component="form"
-                sx={{'& .MuiTextField-root': { m: 1, width: '25ch'}}}
-                noValidate
-                autoComplete = "off"
-            >
-            <form onSubmit={this.handleSubmit}>
-            <TextField
-                required
-                id="outlined-multiline-flexible"
-                multiline
-                margin="dense"
-            />
-            <TextField
-                required
-                margin="dense"
-                multiline="false"
-                id="outlined-multiline-flexible"
-            />
-            <Stack spacing={2}>
-                <Button variant="outlined" size="medium" endIcon={<SendIcon />}
-                fullWidth
-                >
-                    Senden
-                </Button>
-
-            </Stack>
+            <form>
+                <div className="form-group">
+                    <label>
+                        Ihre Nachricht:
+                    </label>
+                    <input type="text" className="form-control" placeholder="Nachricht" />
+                </div>
+                <div className="form-group">
+                    <label>
+                        Ihre Mailadresse:
+                    </label>
+                    <input type="text" className="form-control" placeholder="Mailadresse" />
+                </div>
+                <button type="submit" className="button btn">
+                    senden
+                </button>
             </form>
-            </Box>
             </div>
             </div>
             </div>

@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import TextField from'@mui/material/TextField';
+import FormControl, { useFormControl } from '@mui/material/FormControl';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import Box from '@mui/material/Box';
+import FormHelperText from '@mui/material/FormHelperText';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 import '../css/Login.css'
 import '../css/Navbar.css'
@@ -27,7 +35,7 @@ export default class SignUp extends Component {
             <div className="App">
             <div className="outer">
             <div className="inner">
-            <form>
+            <form onSubmit={this.handleSubmit}>
                 <h3>Register</h3>
 
                 <div className="form-group">
@@ -50,9 +58,13 @@ export default class SignUp extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <button type="submit" className="button btn">Register</button>
+                <button type="submit" className="button btn">
+                    senden
+                </button>
                 <p className="forgot-password text-right ">
-                <Link className="nav-link" to={"/sign-in"}>Already registered, log in?</Link>
+                    <Link className="nav-link" to={"/sign-in"}>
+                        Already registered, log in?
+                    </Link>
                 </p>
             </form>
             </div>
