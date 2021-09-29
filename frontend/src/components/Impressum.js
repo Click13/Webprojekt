@@ -1,6 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-
+import TextField from'@mui/material/TextField';
+import FormControl, { useFormControl } from '@mui/material/FormControl';
+import OutlinedInput from '@mui/material/OutlinedInput';
+import Box from '@mui/material/Box';
+import FormHelperText from '@mui/material/FormHelperText';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
+import Avatar from '@mui/material/Avatar';
 
 
 export default class Impressum extends Component {
@@ -75,9 +83,34 @@ export default class Impressum extends Component {
                 Kontaktformular:
             </h2>
             Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
+            <Box component="form"
+                sx={{'& .MuiTextField-root': { m: 1, width: '25ch'}}}
+                noValidate
+                autoComplete = "off"
+            >
+            <form onSubmit={this.handleSubmit}>
+            <TextField
+                required
+                id="outlined-multiline-flexible"
+                multiline
+                margin="dense"
+            />
+            <TextField
+                required
+                margin="dense"
+                multiline="false"
+                id="outlined-multiline-flexible"
+            />
+            <Stack spacing={2}>
+                <Button variant="outlined" size="medium" endIcon={<SendIcon />}
+                fullWidth
+                >
+                    Senden
+                </Button>
 
-
-
+            </Stack>
+            </form>
+            </Box>
             </div>
             </div>
             </div>
