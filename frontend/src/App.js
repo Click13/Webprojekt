@@ -21,7 +21,7 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path='/impressum' component={Impressum} />
             <Route path='/datenschutz' component={Datenschutz} />
-            <Route path='gesch-bdg' component={AGB} />
+            <Route path='/gesch-bdg' component={AGB} />
           </Switch>
     </Router>
 

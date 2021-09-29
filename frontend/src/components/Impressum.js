@@ -32,7 +32,7 @@ export default class Impressum extends Component {
             </nav>
             <div className="App">
             <div className="outer">
-            <div className="inner">
+            <div className="static">
             <h2>
                 Impressum:
             </h2>

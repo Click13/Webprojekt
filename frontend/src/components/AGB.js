@@ -24,7 +24,7 @@ export default class AGB extends Component {
             </nav>
             <div className="App">
             <div className="outer">
-            <div className="inner">
+            <div className="static">
             <h2>
                 allgemeine Geschäftsbedingungen
             </h2>
