@@ -26,6 +26,8 @@ export default class Login extends Component {
             <div className="App">
             <div className="outer">
             <div className="inner">
+            <div id="fix_navbar">
+                        </div>
             <form>
                 <h3>Log in</h3>
 

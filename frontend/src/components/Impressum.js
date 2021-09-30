@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import TextField from'@mui/material/TextField';
 import FormControl, { useFormControl } from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
@@ -14,7 +14,7 @@ export default class Impressum extends Component {
     render() {
         return (
             <div className="App">
-            <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+            <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container">
                 <Link className="navbar-brand" to={"/Main"}>MyTicket</Link>
                 <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -32,25 +32,21 @@ export default class Impressum extends Component {
             <div className="App">
             <div className="outer">
             <div className="static">
-            <h2>
+            <div id="fix_navbar">
+            </div>
+            <h3>
                 Impressum:
-            </h2>
+            </h3>
                 Für das Angebot dieser Website ist verantwortlich:
             <h3>
-                MyTicket AG
-                Neue Straße 13
+                MyTicket AG<br />
+                Neue Straße 13<br />
                 66139 Musterhausen
             </h3>
             Zu unserem Umgang mit Ihren Daten lesen Sie bitte unsere
-            <Link to{..."/Datenschutz"}>Datenschutzerklärung</Link>.
-            <h2>
-                Hinweise und Verfahren zur Geltendmachung von Ansprüchen bei Schutzrechtsverletzungen:
-            </h2>
+            <Link href={"/Datenschutz"} color="#000000" underline="hover"> Datenschutzerklärung</Link>.<br />
             Wir respektieren die Rechte am geistigen Eigentum Dritter.
             Bei Ansprüchen aufgrund einer Verletzung von Rechten des geistigen Eigentums senden Sie uns bitte eine entsprechende Mitteilung.
-            <h2>
-                Haftungsausschluss:
-            </h2>
             <h3>
                 Haftung für Inhalte:
             </h3>
@@ -61,16 +57,6 @@ export default class Impressum extends Component {
             Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.
             Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
             <h3>
-                Haftung für Links
-            </h3>
-            Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
-            Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.
-            Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
-            Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft.
-            Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
-            Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
-            Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
-            <h3>
                 Urheberrecht
             </h3>
             Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
@@ -78,9 +64,9 @@ export default class Impressum extends Component {
             Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
             Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
             Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
-            <h2>
+            <h3>
                 Kontaktformular:
-            </h2>
+            </h3>
             Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
             <form>
                 <div className="form-group">

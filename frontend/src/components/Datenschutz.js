@@ -26,9 +26,11 @@ export default class Impressum extends Component {
             <div className="App">
             <div className="outer">
             <div className="static">
-                        <h2>
+            <div id="fix_navbar_Data">
+            </div>
+                        <h3>
                             Datenschutz
-                        </h2>
+                        </h3>
                             Der Schutz Ihrer Daten ist uns sehr wichtig. In diesen Datenschutzbestimmungen wird erläutert, welche personenbezogenen Daten
                             erfasst werden sowie wie und wofür sie verwendet werden.
                         <h3>
@@ -38,24 +40,15 @@ export default class Impressum extends Component {
                             Einige dieser Daten stellen Sie direkt bereit, andere erhalten wir durch das Sammeln von Informationen über Ihre Aktivitäten, Nutzung und Erfahrungen mit unseren Produkten.
                             Wir erhalten ebenfalls Daten über Sie von Drittanbietern.
                         <h3>
-                            Kommentare:
-                        </h3>
-                            Wenn Besucher Kommentare auf der Website schreiben, sammeln wir die Daten, die im Kommentar-Formular angezeigt werden, außerdem die IP-Adresse des Besuchers und den User-Agent-String (damit wird der Browser identifiziert), um die Erkennung von Spam zu unterstützen.
-                        <h3>
                             Cookies:
                         </h3>
                             Wenn du einen Kommentar auf unserer Website schreibst, kann das eine Einwilligung sein, deinen Namen, E-Mail-Adresse und Website in Cookies zu speichern.
                             Dies ist eine Komfortfunktion, damit du nicht, wenn du einen weiteren Kommentar schreibst, all diese Daten erneut eingeben musst.
-                            Diese Cookies werden ein Jahr lang gespeichert.
                             Falls du ein Konto hast und dich auf dieser Website anmeldest, werden wir ein temporäres Cookie setzen, um festzustellen, ob dein Browser Cookies akzeptiert.
                             Dieses Cookie enthält keine personenbezogenen Daten und wird verworfen, wenn du deinen Browser schließt.
                             Wenn du dich anmeldest, werden wir einige Cookies einrichten, um deine Anmeldeinformationen und Anzeigeoptionen zu speichern.
                             Anmelde-Cookies verfallen nach zwei Tagen und Cookies für die Anzeigeoptionen nach einem Jahr.
-                            Falls du bei der Anmeldung „Angemeldet bleiben“ auswählst, wird deine Anmeldung zwei Wochen lang aufrechterhalten.
                             Mit der Abmeldung aus deinem Konto werden die Anmelde-Cookies gelöscht.
-                            Wenn du einen Artikel bearbeitest oder veröffentlichst, wird ein zusätzlicher Cookie in deinem Browser gespeichert.
-                            Dieser Cookie enthält keine personenbezogenen Daten und verweist nur auf die Beitrags-ID des Artikels, den du gerade bearbeitet hast.
-                            Der Cookie verfällt nach einem Tag.
                         <h3>
                             Eingebettete Inhalte von anderen Websites:
                         </h3>
