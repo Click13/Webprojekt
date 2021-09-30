@@ -1,10 +1,33 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {Redirect} from 'react-router';
 
 import '../css/Login.css'
 import '../css/Navbar.css'
 
 export default class Login extends Component {
+    constructor(props){
+        super(props);
+        this.state = {username: ''};
+        this.state = {password: ''};
+        this.state = {loggedIn: false};
+        this.handleChangeUSER = this.handleChangeUSER.bind(this);
+        this.handleChangePW = this.handleChangePW.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleChangeUSER(event){
+        this.setState({username: event.target.value});
+    }
+    handleChangePW(event){
+            this.setState({password: event.target.value});
+        }
+    handleSubmit(event){
+        if(this.state.username === 'Test@data.de' &&
+        this.state.password === 'test'
+        ){
+            this.setState({loggedIn: true});
+        }
+    }
     render() {
         return (
             <div className="App">
@@ -26,33 +49,32 @@ export default class Login extends Component {
             <div className="App">
             <div className="outer">
             <div className="inner">
+            if(this.state.loggedIn === true){
+                <Redirect to='/loggedInUser'/>
+            }
+            else{
             <div id="fix_navbar_fewText">
-                        </div>
-            <form>
+            </div>
+            [
+            <form onSubmit={this.handleSubmit}>
                 <h3>Log in</h3>
-
                 <div className="form-group">
                     <label>Email</label>
-                    <input type="email" className="form-control" placeholder="Enter email" />
+                    <input type="email" className="form-control" placeholder="Enter email" value={this.state.value} onChange={this.handleChangeUSER} />
                 </div>
 
                 <div className="form-group">
                     <label>Password</label>
-                    <input type="password" className="form-control" placeholder="Enter password" />
+                    <input type="password" className="form-control" placeholder="Enter password" value={this.state.value} onChange={this.handleChangePW} />
                 </div>
-
-                <div className="form-group">
-                    <div className="custom-control custom-checkbox">
-                        <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                        <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                    </div>
-                </div>
-                <button type="submit" className=" button btn">Login</button>
+                <button type="submit" className="button btn" >Login</button>
                 <p className="forgot-password text-right">
                     <Link className="nav-link" to={"/reset-password"}> Forgot password?</Link>
                     <Link className="nav-link" to={"/sign-up"}>Not registered yet?</Link>
                 </p>
             </form>
+            ]
+            }
             </div>
             </div>
             </div>

@@ -11,6 +11,7 @@ import Main from "./components/Main";
 import Impressum from "./components/Impressum";
 import Datenschutz from "./components/Datenschutz";
 import AGB from "./components/AGB";
+import LoggedIn from "./components/LoggedInUser"
 
 function App() {
   return (<Router>
@@ -22,6 +23,7 @@ function App() {
             <Route path='/impressum' component={Impressum} />
             <Route path='/datenschutz' component={Datenschutz} />
             <Route path='/gesch-bdg' component={AGB} />
+            <Route path='/loggedInUser' component={LoggedIn} />
           </Switch>
     </Router>
 
