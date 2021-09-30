@@ -68,23 +68,23 @@ export default class Impressum extends Component {
                 Kontaktformular:
             </h3>
             Bitte verwenden Sie dieses Formular, um mit uns in Kontakt zu treten.
-            <form>
-                <div className="form-group">
-                    <label>
-                        Ihre Nachricht:
-                    </label>
-                    <input type="text" className="form-control" placeholder="Nachricht" />
-                </div>
-                <div className="form-group">
-                    <label>
-                        Ihre Mailadresse:
-                    </label>
-                    <input type="text" className="form-control" placeholder="Mailadresse" />
-                </div>
-                <button type="submit" className="button btn">
-                    senden
-                </button>
-            </form>
+            <form autocomplete="off">
+                                            <div className="form-group">
+                                                <label>
+                                                    Ihre Nachricht:
+                                                </label>
+                                                <textarea type="text" className="form-control" placeholder="Nachricht" />
+                                            </div>
+                                            <div className="form-group">
+                                                <label>
+                                                    Ihre Mailadresse:
+                                                </label>
+                                                <input type="text" className="form-control" placeholder="Mailadresse" />
+                                            </div>
+                                            <button type="submit" className="button btn">
+                                                senden
+                                            </button>
+                                        </form>
             </div>
             </div>
             </div>

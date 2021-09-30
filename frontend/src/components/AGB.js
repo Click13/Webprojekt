@@ -25,15 +25,40 @@ export default class AGB extends Component {
             <div className="App">
             <div className="outer">
             <div className="static">
-            <div id="fix_navbar">
+            <div id="fix_navbar_fewText">
             </div>
-            <h2>
+            <h3>
                 allgemeine Geschäftsbedingungen
-            </h2>
-                Unseren allgemeinen Geschäftsbedingungen stimmen Sie mit der Nutzung dieser Website zu.
-
-
-
+            </h3>
+                Unseren allgemeinen Geschäftsbedingungen stimmen Sie mit der Nutzung dieser Website zu.<br />
+                Nutzung der Website auf eigene Gefahr, Eltern haften für ihre Kinder!<br />
+                Unsere allgemeinen Geschäftsbedingungen enthalten:
+                <ul>
+                    <li className="nav-item">A Dies sind die allgemeinen Geschäftsbedingungen von MyTicket</li>
+                    <li className="nav-item">B MyTicket verwendet JavaScript und React, um Ihnen ein möglichst gutes Surferlebnis zu ermöglichen</li>
+                    <li className="nav-item">C Wer stört sich schon an den Schriftarten, die wir von Google beziehen?</li>
+                    <li className="nav-item">D Dies liegt am MaterialUI-Theme, das wir verwenden.</li>
+                </ul>
+                Bei Fragen verwenden Sie bitte das unten stehende Kontaktformular.<br />
+                Bei Fragen zu der Verwendung Ihrer Daten lesen Sie bitte zuerst unsere
+                <Link href={"/Datenschutz"} color="#000000" underline="hover"> Datenschutzerklärung</Link>.
+                <form autocomplete="off">
+                                <div className="form-group">
+                                    <label>
+                                        Ihre Nachricht:
+                                    </label>
+                                    <textarea type="text" className="form-control" placeholder="Nachricht" />
+                                </div>
+                                <div className="form-group">
+                                    <label>
+                                        Ihre Mailadresse:
+                                    </label>
+                                    <input type="text" className="form-control" placeholder="Mailadresse" />
+                                </div>
+                                <button type="submit" className="button btn">
+                                    senden
+                                </button>
+                            </form>
             </div>
             </div>
             </div>

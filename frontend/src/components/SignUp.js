@@ -35,7 +35,7 @@ export default class SignUp extends Component {
             <div className="App">
             <div className="outer">
             <div className="inner">
-            <div id="fix_navbar">
+            <div id="fix_navbar_fewText">
                         </div>
             <form onSubmit={this.handleSubmit}>
                 <h3>Register</h3>

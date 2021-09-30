@@ -86,8 +86,8 @@ span {
 
 #fix_navbar{
     height: 150px;
-    min-height: 100px;
-    padding-top: 50px;
+    min-height: 10%;
+    padding-top: 100px;
     margin-top: 100px;
 }
 
@@ -96,4 +96,9 @@ span {
     min-height: 150px;
     padding-top: 100px;
     margin-top: 150px;
+}
+
+#fix_navbar_fewText{
+    height: 50px;
+    min-height: 40px;
 }
