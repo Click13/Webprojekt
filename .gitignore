@@ -1,47 +1,28 @@
-/target/
-
-.cache-main
-.cache-tests
-
-# use glob syntax.
-syntax: glob
-*.ser
-*.class
-*~
-*.bak
-*.off
-*.old
-
-.settings
-.classpath
-
 .idea
-target
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# testing
+coverage
+
+# production
 build
-null
-tmp*
-temp*
-dist
-test-output
-build.log
 
-.svn
-.CVS
-.hg*
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-build.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-.cache*
-dependency-reduced-pom.xml
-
-_testOutput
-output
-/keystore/
-
-/.project
-/.vscode
-/node_modules
-
-*.png
-*.gif
-*.jpg
+yarn.lock
+package-lock.json
