@@ -1,0 +1,10 @@
+.wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top {
+  background: #ff0d0d;
+  border-bottom: 1px solid #ffffff; }
+  .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-brand {
+    background: #ffd000; }
+  .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-text {
+    color: #fff; }
+  .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:active, .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:hover, .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:focus {
+    color: #fff; }
+
