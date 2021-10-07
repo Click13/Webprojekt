@@ -1790,7 +1790,7 @@ a#toggle_mobile_nav {
 }
 
 .wrapper {
-	background:$white;
+	background:$red;
 	&.no-transition {
 		.fixed-sidebar-left,.page-wrapper { /*Only for Setting Panel*/
 			@include transition(all 0s ease);

@@ -2564,7 +2564,7 @@ a#toggle_mobile_nav {
   display: block; }
 
 .wrapper {
-  background: #fff; }
+  background: rgb(247, 0, 0); }
   .wrapper.no-transition .fixed-sidebar-left, .wrapper.no-transition .page-wrapper {
     /*Only for Setting Panel*/
     -webkit-transition: all 0s ease;
@@ -2597,10 +2597,10 @@ a#toggle_mobile_nav {
     .wrapper.theme-1-active .fixed-sidebar-left .side-nav {
       background: #2a3e4c; }
   .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top {
-    background: #2a3e4c;
-    border-bottom: 1px solid #2a3e4c; }
+    background: #ff0d0d;
+    border-bottom: 1px solid #ffffff; }
     .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-brand {
-      background: #2a3e4c; }
+      background: #ffd000; }
     .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-text {
       color: #fff; }
     .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:active, .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:hover, .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .nav > li > a:focus {
@@ -2684,7 +2684,7 @@ a#toggle_mobile_nav {
   .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-nav, .wrapper.theme-4-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-nav, .wrapper.theme-5-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-nav, .wrapper.theme-6-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-nav {
     background: #292929; }
   .wrapper.theme-2-active .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group input {
-    background: #2a3e4c;
+    background: #ffdb3ace;
     color: #fff; }
   .wrapper.theme-3-active .navbar.navbar-inverse.navbar-fixed-top .nav-header {
     background: #fff; }
@@ -2699,7 +2699,7 @@ a#toggle_mobile_nav {
     background: #2a3e4c;
     color: #fff; }
   .wrapper.theme-5-active .navbar.navbar-inverse.navbar-fixed-top .mobile-only-nav {
-    background: #f5f5f5; }
+    background: #59ac0c; }
   .wrapper.theme-6-active .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group input {
     background: #2a3e4c;
     color: #fff; } }
