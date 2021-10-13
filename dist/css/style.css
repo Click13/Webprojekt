@@ -2712,13 +2712,13 @@ a#toggle_mobile_nav {
         width: 100px;
         padding-top: 19px; }
         .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-img {
-          margin-right: 5px;
+          margin-right: 10px;
           position:relative;
           top: 2px; }
         .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-text {
           display: inline-block;
           font-family: "Poppins", sans-serif;
-          color: #212121;
+          color: #ffffff;
           font-size: 21px;
           text-transform: capitalize;
           opacity: 1;
