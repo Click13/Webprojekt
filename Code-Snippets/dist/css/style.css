@@ -2759,14 +2759,14 @@ a#toggle_mobile_nav {
             .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > .btn i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .wizard > .actions .input-group-btn > a i, .wizard > .actions .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > a i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .dt-buttons .input-group-btn > .dt-button i, .dt-buttons .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > .dt-button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .tablesaw-sortable th.tablesaw-sortable-head .input-group-btn > button i, .tablesaw-sortable th.tablesaw-sortable-head .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .sweet-alert .input-group-btn > button i, .sweet-alert .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .owl-theme .owl-nav .input-group-btn > [class*="owl-"] i, .owl-theme .owl-nav .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > [class*="owl-"] i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > button.fc-agendaDay-button.fc-state-default.fc-corner-right i,
             .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > button.fc-month-button.fc-state-default.fc-corner-left i,
             .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > button.fc-agendaWeek-button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > .fc-prev-button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > .fc-next-button i, .navbar.navbar-inverse.navbar-fixed-top .top-nav-search .input-group .input-group-btn > .fc-today-button i {
-              color: #878787;
+              color: #ffffff;
               font-size: 20px; }
     .navbar.navbar-inverse.navbar-fixed-top .nav > li.dropdown {
       position: relative; }
     .navbar.navbar-inverse.navbar-fixed-top .nav > li.full-width-drp {
       position: static; }
     .navbar.navbar-inverse.navbar-fixed-top .nav > li > a {
-      color: #878787;
+      color: #ffffff;
       background: transparent !important;
       -webkit-transition: 0.3s ease;
       -moz-transition: 0.3s ease;
@@ -2795,14 +2795,14 @@ a#toggle_mobile_nav {
         padding-bottom: 10px;
         padding-top: 10px;
         text-align: center;
-        color: #878787;
+        color: #878787 ;
         text-transform: capitalize;
         width: 80px; }
         .navbar.navbar-inverse.navbar-fixed-top .nav > li .dropdown-menu.app-dropdown .connection-item i {
           font-size: 25px;
           padding-bottom: 5px; }
         .navbar.navbar-inverse.navbar-fixed-top .nav > li .dropdown-menu.app-dropdown .connection-item:hover {
-          color: #878787;
+          color:  #878787;
           background: rgba(33, 33, 33, 0.05); }
       .navbar.navbar-inverse.navbar-fixed-top .nav > li .dropdown-menu.app-dropdown .app-icon-wrap {
         text-align: center; }
@@ -6958,7 +6958,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
     left: 225px; }
   .slide-nav-toggle .navbar.navbar-inverse.navbar-fixed-top .nav-header {
     width: 225px; }
-    .slide-nav-toggle .navbar.navbar-inverse.navbar-fixed-top .nav-header .logo-wrap .brand-text {
+    .slide-nav-toggle .navbar.navbar-inverse.navbar-fixed-top .nav-header .brand-text {
       opacity: 1;
       visibility: visible; } }
 @media (max-width: 1200px) {
