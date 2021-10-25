@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
@@ -9,6 +9,7 @@
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<!-- Custom CSS -->
 	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+	<link href="main-style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--Preloader-->
@@ -16,7 +17,7 @@
 	<div class="la-anim-1"></div>
 </div>
 <!--/Preloader-->
-<div class="wrapper theme-1-active pimary-color-green">
+<div class="wrapper theme-2-active">
 	<!-- Top Menu Items -->
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="mobile-only-brand pull-left">
@@ -43,7 +44,7 @@
 		<div id="mobile_only_nav" class="mobile-only-nav pull-right">
 			<ul class="nav navbar-right top-nav pull-right">
 				<li class="dropdown auth-drp">
-					<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+					<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
 					<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
 						<li>
 							<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
@@ -79,65 +80,45 @@
 	<!-- Left Sidebar Menu -->
 	<div class="fixed-sidebar-left">
 		<ul class="nav navbar-nav side-nav nicescroll-bar">
-			<li class="navigation-header">
-				<span>Main</span>
-				<i class="zmdi zmdi-more"></i>
-			</li>
+
 			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+				<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20"></i><span class="basic-text" class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 				<ul id="dashboard_dr" class="collapse collapse-level-1">
 					<li>
-						<a href="index.html">Analytical</a>
+						<a  href="empty" class="basic-text">Projekt&uuml;bersicht</a>
 					</li>
 					<li>
-						<a href="index3.html">Project</a>
+						<a href="empty">Kalender</a>
 					</li>
-				</ul>
-			</li>
-			<li>
-				<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
-				<ul id="ecom_dr" class="collapse collapse-level-1">
-					<li>
-						<a href="e-commerce.html">Dashboard</a>
-					</li>
-					<li>
-						<a href="product.html">Products</a>
-					</li>
-					<li>
-						<a href="product-detail.html">Product Detail</a>
-					</li>
-					<li>
-						<a class="active-page" href="add-project.html">Projekt hinzufügen</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-apps mr-20"></i><span class="right-nav-text">Apps </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="app_dr" class="collapse collapse-level-1">
 					<li>
 						<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 						<ul id="email_dr" class="collapse collapse-level-2">
 							<li>
-								<a href="inbox.html">inbox</a>
+								<a href="inbox.html">Posteingang</a>
 							</li>
 							<li>
-								<a href="inbox-detail.html">detail email</a>
+								<a href="inbox-detail.html">Spam</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Contacts<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+						<a href="emptyl">Kontakte</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-folder mr-20"></i><span class="basic-text" class="right-nav-text">Projekte</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+				<ul id="app_dr" class="collapse collapse-level-1">
+					<li>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Projekt&uuml;bersicht<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 						<ul id="contact_dr" class="collapse collapse-level-2">
 							<li>
-								<a href="contact-list.html">list</a>
+								<a href="contact-list.html">Projekte verwalten</a>
 							</li>
 							<li>
-								<a href="contact-card.html">cards</a>
+								<a href="contact-card.html">Projekte hinzuf&uuml;gen</a>
 							</li>
 						</ul>
-					</li>
-					<li>
-						<a href="file-manager.html">File Manager</a>
 					</li>
 					<li>
 						<a href="todo-tasklist.html">To Do/Tasklist</a>
@@ -145,114 +126,22 @@
 				</ul>
 			</li>
 			<li>
-				<a href="widgets.html"><div class="pull-left"><i class="zmdi zmdi-flag mr-20"></i><span class="right-nav-text">widgets</span></div><div class="pull-right"><span class="label label-warning">8</span></div><div class="clearfix"></div></a>
-			</li>
-			<li><hr class="light-grey-hr mb-10"/></li>
-			<li class="navigation-header">
-				<span>component</span>
-				<i class="zmdi zmdi-more"></i>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">UI Elements</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
-					<li>
-						<a href="panels-wells.html">Panels & Wells</a>
-					</li>
-					<li>
-						<a href="pricing.html">Pricing Tables</a>
-					</li>
-					<li>
-						<a href="nestable.html">Nestables</a>
-					</li>
-				</ul>
+				<a href="javascript:void(0);" >
+					<div class="pull-left">
+						<i class="zmdi zmdi-phone mr-20">
+						</i>
+						<span class="basic-text" class="right-nav-text">
+                            Kontakt
+                        </span>
+					</div>
+					<div class="pull-right">
+					</div>
+					<div class="clearfix">
+					</div>
+				</a>
 			</li>
 			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">Forms</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="form_dr" class="collapse collapse-level-1 two-col-list">
-					<li>
-						<a href="form-x-editable.html">X-Editable</a>
-					</li>
-					<li>
-						<a href="cropperjs.html">Cropperjs</a>
-					</li>
-					<li>
-						<a href="form-file-upload.html">File Upload</a>
-					</li>
-					<li>
-						<a href="dropzone.html">Dropzone</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr"><div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">Charts </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="chart_dr" class="collapse collapse-level-1 two-col-list">
-					<li>
-						<a href="flot-chart.html">Flot Chart</a>
-					</li>
-					<li>
-						<a href="morris-chart.html">Morris Chart</a>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">Tables</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="table_dr" class="collapse collapse-level-1 two-col-list">
-					<li>
-						<a href="basic-table.html">Basic Table</a>
-					</li>
-					<li>
-						<a href="bootstrap-table.html">Bootstrap Table</a>
-					</li>
-					<li>
-						<a href="data-table.html">Data Table</a>
-					</li>
-				</ul>
-			</li>
-			<li><hr class="light-grey-hr mb-10"/></li>
-			<li class="navigation-header">
-				<span>featured</span>
-				<i class="zmdi zmdi-more"></i>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
-					<li>
-						<a class="active" href="blank.html">Blank Page</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#invoice_dr">Invoice<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="invoice_dr" class="collapse collapse-level-2">
-							<li>
-								<a href="invoice.html">Invoice</a>
-							</li>
-							<li>
-								<a href="invoice-archive.html">Invoice Archive</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
-			</li>
-			<li>
-				<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
-			</li>
-			<li>
-				<a href="javascript:void(0);" data-toggle="collapse" data-target="#dropdown_dr_lv1"><div class="pull-left"><i class="zmdi zmdi-filter-list mr-20"></i><span class="right-nav-text">multilevel</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-				<ul id="dropdown_dr_lv1" class="collapse collapse-level-1">
-					<li>
-						<a href="#">Item level 1</a>
-					</li>
-					<li>
-						<a href="javascript:void(0);" data-toggle="collapse" data-target="#dropdown_dr_lv2">Dropdown level 2<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-						<ul id="dropdown_dr_lv2" class="collapse collapse-level-2">
-							<li>
-								<a href="#">Item level 2</a>
-							</li>
-							<li>
-								<a href="#">Item level 2</a>
-							</li>
-						</ul>
-					</li>
-				</ul>
+				<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-info mr-20"></i><span class="basic-text" class="right-nav-text">Impressum</span></div><div class="clearfix"></div></a>
 			</li>
 		</ul>
 	</div>

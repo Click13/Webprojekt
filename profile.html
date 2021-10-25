@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8" />
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
 	<title>MyTicket</title>
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-	<!-- Morris Charts CSS -->
-    <link href="vendors/bower_components/morris.js/morris.css" rel="stylesheet" type="text/css"/>
-	<!-- vector map CSS -->
-	<link href="vendors/vectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet" type="text/css"/>
-	<!-- Calendar CSS -->
-	<link href="vendors/bower_components/fullcalendar/dist/fullcalendar.css" rel="stylesheet" type="text/css"/>
+	<!-- Bootstrap Wysihtml5 css -->
+	<link rel="stylesheet" href="vendors/bower_components/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.css" />
 	<!-- Data table CSS -->
 	<link href="vendors/bower_components/datatables/media/css/jquery.dataTables.min.css" rel="stylesheet" type="text/css"/>
 	<!-- Custom CSS -->
 	<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+	<link href="main-style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<!--Preloader-->
@@ -24,7 +21,7 @@
 		<div class="la-anim-1"></div>
 	</div>
 	<!--/Preloader-->
-    <div class="wrapper theme-1-active pimary-color-green">
+    <div class="wrapper theme-2-active">
 		<!-- Top Menu Items -->
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="mobile-only-brand pull-left">
@@ -51,7 +48,7 @@
 			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
 				<ul class="nav navbar-right top-nav pull-right">
 					<li class="dropdown auth-drp">
-						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="dist/img/user1.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
 						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
 							<li>
 								<a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
@@ -81,125 +78,74 @@
 			</div>	
 		</nav>
 		<!-- /Top Menu Items -->
-		<!-- Left Sidebar Menu -->
 		<div class="fixed-sidebar-left">
 			<ul class="nav navbar-nav side-nav nicescroll-bar">
-				<li class="navigation-header">
-					<span>Main</span> 
-					<i class="zmdi zmdi-more"></i>
-				</li>
+
 				<li>
-					<a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20"></i><span class="basic-text" class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="dashboard_dr" class="collapse collapse-level-1">
 						<li>
-							<a href="index.html">Analytical</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
-					<ul id="ecom_dr" class="collapse collapse-level-1">
-						<li>
-							<a href="e-commerce.html">Dashboard</a>
+							<a  href="empty" class="basic-text">Projekt&uuml;bersicht</a>
 						</li>
 						<li>
-							<a href="product-cart.html">Cart</a>
-						</li>
-					</ul>
-				</li>
-				<li><hr class="light-grey-hr mb-10"/></li>
-				<li class="navigation-header">
-					<span>component</span> 
-					<i class="zmdi zmdi-more"></i>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">UI Elements</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="range-slider.html">Range Slider</a>
+							<a href="empty">Kalender</a>
 						</li>
 						<li>
-							<a href="grid-styles.html">Grid</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">Forms</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="form_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="summernote-wysihtml5.html">summernote</a>
-						</li>
-						<li>
-							<a href="typeahead-js.html">typeahead</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#chart_dr"><div class="pull-left"><i class="zmdi zmdi-chart-donut mr-20"></i><span class="right-nav-text">Charts </span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="chart_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="sparkline.html">Sparkline</a>
-						</li>
-						<li>
-							<a href="peity-chart.html">Peity Chart</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">Tables</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="table_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="foo-table.html">Foo Table</a>
-						</li>
-						<li>
-							<a href="jsgrid-table.html">Jsgrid Table</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr"><div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">Icons</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="icon_dr" class="collapse collapse-level-1">
-						<li>
-							<a href="pe-icon-7.html">Pe-icon-7</a>
-						</li>
-						<li>
-							<a href="glyphicons.html">Glyphicons</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a class="active" href="blank.html">Blank Page</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);" data-toggle="collapse" data-target="#auth_dr">Authantication pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-							<ul id="auth_dr" class="collapse collapse-level-2">
+							<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+							<ul id="email_dr" class="collapse collapse-level-2">
 								<li>
-									<a href="locked.html">Lock Screen</a>
+									<a href="inbox.html">Posteingang</a>
+								</li>
+								<li>
+									<a href="inbox-detail.html">Spam</a>
 								</li>
 							</ul>
 						</li>
 						<li>
-							<a href="gallery.html">Gallery</a>
-						</li>
-						<li>
-							<a href="timeline.html">Timeline</a>
-						</li>
-						<li>
-							<a href="faq.html">FAQ</a>
+							<a href="emptyl">Kontakte</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
+					<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-folder mr-20"></i><span class="basic-text" class="right-nav-text">Projekte</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+					<ul id="app_dr" class="collapse collapse-level-1">
+						<li>
+							<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Projekt&uuml;bersicht<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+							<ul id="contact_dr" class="collapse collapse-level-2">
+								<li>
+									<a href="contact-list.html">Projekte verwalten</a>
+								</li>
+								<li>
+									<a href="contact-card.html">Projekte hinzuf&uuml;gen</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="todo-tasklist.html">To Do/Tasklist</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="javascript:void(0);" >
+						<div class="pull-left">
+							<i class="zmdi zmdi-phone mr-20">
+							</i>
+							<span class="basic-text" class="right-nav-text">
+                            Kontakt
+                        </span>
+						</div>
+						<div class="pull-right">
+						</div>
+						<div class="clearfix">
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-info mr-20"></i><span class="basic-text" class="right-nav-text">Impressum</span></div><div class="clearfix"></div></a>
 				</li>
 			</ul>
 		</div>
 		<!-- /Left Sidebar Menu -->
-		<!-- Right Sidebar Menu -->
-		<!-- /Right Sidebar Menu -->
 		<!-- Right Sidebar Backdrop -->
 		<div class="right-sidebar-backdrop"></div>
 		<!-- /Right Sidebar Backdrop -->
@@ -238,7 +184,6 @@
 									<div  class="tab-struct custom-tab-1">
 										<ul role="tablist" class="nav nav-tabs nav-tabs-responsive" id="myTabs_8">
 											<li class="active" role="presentation"><a  data-toggle="tab" id="profile_tab_8" role="tab" href="#profile_8" aria-expanded="false"><span>profile</span></a></li>
-											<li role="presentation" class=""><a  data-toggle="tab" id="photos_tab_8" role="tab" href="#photos_8" aria-expanded="false"><span>photos</span></a></li>
 											<li role="presentation" class=""><a  data-toggle="tab" id="settings_tab_8" role="tab" href="#settings_8" aria-expanded="false"><span>settings</span></a></li>
 										</ul>
 										<div class="tab-content" id="myTabContent_8">
@@ -301,7 +246,7 @@
 																		<img class="img-responsive img-circle" src="dist/img/user4.png" alt="avatar"/>
 																	</div>
 																	<div class="sl-content">
-																		<p class="inline-block"><span class="capitalize-font txt-success mr-5 weight-500">jonnie metoyer</span><span>created a group 'Hencework' in the discussion forum</span></p>
+																		<p class="inline-block"><span class="capitalize-font txt-success mr-5 weight-500">jonnie metoyer</span><span>created a group 'MyTicket' in the discussion forum</span></p>
 																		<span class="block txt-grey font-12 capitalize-font">18 feb</span>
 																	</div>
 																</a>
@@ -309,65 +254,6 @@
 														</div>
 													</div>
 												</div>
-											</div>
-											<div  id="photos_8" class="tab-pane fade" role="tabpanel">
-												<div class="col-md-12 pb-20">
-													<div class="gallery-wrap">
-														<div class="portfolio-wrap project-gallery">
-															<ul id="portfolio_1" class="portf auto-construct  project-gallery" data-col="4">
-																<li  class="item"   data-src="dist/img/gallery/equal-size/mock1.jpg" data-sub-html="<h6>Bagwati</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" >
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock1.jpg"  alt="Image description" />
-																	<span class="hover-cap">Bagwati</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock2.jpg"   data-sub-html="<h6>Not a Keyboard</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock2.jpg"  alt="Image description" />
-																	<span class="hover-cap">Not a Keyboard</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock3.jpg" data-sub-html="<h6>Into the Woods</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock3.jpg"  alt="Image description" />
-																	<span class="hover-cap">Into the Woods</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock4.jpg"  data-sub-html="<h6>Ultra Saffire</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock4.jpg"  alt="Image description" />
-																	<span class="hover-cap"> Ultra Saffire</span>
-																	</a>
-																</li>
-																
-																<li class="item" data-src="dist/img/gallery/equal-size/mock5.jpg" data-sub-html="<h6>Happy Puppy</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock5.jpg"  alt="Image description" />	
-																	<span class="hover-cap">Happy Puppy</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock6.jpg"  data-sub-html="<h6>Wooden Closet</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock6.jpg"  alt="Image description" />
-																	<span class="hover-cap">Wooden Closet</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock7.jpg" data-sub-html="<h6>Happy Puppy</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock7.jpg"  alt="Image description" />	
-																	<span class="hover-cap">Happy Puppy</span>
-																	</a>
-																</li>
-																<li class="item" data-src="dist/img/gallery/equal-size/mock8.jpg"  data-sub-html="<h6>Wooden Closet</h6><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
-																	<a href="">
-																	<img class="img-responsive" src="dist/img/gallery/equal-size/mock8.jpg"  alt="Image description" />
-																	<span class="hover-cap">Wooden Closet</span>
-																	</a>
-																</li>
-															</ul>
-														</div>
-													</div>
-												</div>	
 											</div>
 											<div  id="settings_8" class="tab-pane fade" role="tabpanel">
 												<!-- Row -->
