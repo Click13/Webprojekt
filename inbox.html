@@ -86,10 +86,10 @@
 					<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20"></i><span class="basic-text" class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 					<ul id="dashboard_dr" class="collapse collapse-level-1">
 						<li>
-							<a  href="empty" class="basic-text">Projekt&uuml;bersicht</a>
+							<a  href="project-page.html" class="basic-text">Projekt&uuml;bersicht</a>
 						</li>
 						<li>
-							<a href="empty">Kalender</a>
+							<a href="calendar.html">Kalender</a>
 						</li>
 						<li>
 							<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
@@ -98,12 +98,9 @@
 									<a href="inbox.html">Posteingang</a>
 								</li>
 								<li>
-									<a href="inbox-detail.html">Spam</a>
+									<a href="spam.html">Spam</a>
 								</li>
 							</ul>
-						</li>
-						<li>
-							<a href="emptyl">Kontakte</a>
 						</li>
 					</ul>
 				</li>
@@ -114,25 +111,22 @@
 							<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Projekt&uuml;bersicht<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
 							<ul id="contact_dr" class="collapse collapse-level-2">
 								<li>
-									<a href="contact-list.html">Projekte verwalten</a>
+									<a href="empty">Projekte verwalten</a>
 								</li>
 								<li>
-									<a href="contact-card.html">Projekte hinzuf&uuml;gen</a>
+									<a href="empty">Projekte hinzuf&uuml;gen</a>
 								</li>
 							</ul>
-						</li>
-						<li>
-							<a href="todo-tasklist.html">To Do/Tasklist</a>
 						</li>
 					</ul>
 				</li>
 				<li>
-					<a href="javascript:void(0);" >
+					<a href="Datenschutz.html" >
 						<div class="pull-left">
 							<i class="zmdi zmdi-phone mr-20">
 							</i>
 							<span class="basic-text" class="right-nav-text">
-                            Kontakt
+                            Datenschutz
                         </span>
 						</div>
 						<div class="pull-right">
@@ -142,28 +136,34 @@
 					</a>
 				</li>
 				<li>
-					<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-info mr-20"></i><span class="basic-text" class="right-nav-text">Impressum</span></div><div class="clearfix"></div></a>
+					<a href="Impressum.html">
+						<div class="pull-left">
+							<i class="zmdi zmdi-info mr-20">
+							</i>
+							<span class="basic-text" class="right-nav-text">
+								Impressum
+							</span>
+						</div>
+						<div class="clearfix">
+						</div>
+					</a>
 				</li>
 			</ul>
 		</div>
 		<!-- /Left Sidebar Menu -->
-		<!-- Right Sidebar Backdrop -->
-		<div class="right-sidebar-backdrop"></div>
-		<!-- /Right Sidebar Backdrop -->
         <!-- Main Content -->
 		<div class="page-wrapper">
             <div class="container-fluid">
 				<!-- Title -->
 				<div class="row heading-bg">
 					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-					  <h5 class="txt-dark">inbox</h5>
+					  <h5 class="txt-dark">Posteingang</h5>
 					</div>
 					<!-- Breadcrumb -->
 					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 					  <ol class="breadcrumb">
-						<li><a href="index.html">Dashboard</a></li>
-						<li><a href="#"><span>apps</span></a></li>
-						<li class="active"><span>inbox</span></li>
+						<li>Dashboard</li>
+						<li class="active"><span>Posteingang</span></li>
 					  </ol>
 					</div>
 					<!-- /Breadcrumb -->
@@ -179,8 +179,8 @@
 										<div class="row">
 											<aside class="col-lg-3 col-md-4 pr-0">
 												<div class="mt-20 mb-20 ml-15 mr-15">
-													<a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-success btn-block">
-													write new Mail
+													<a href="#myModal" data-toggle="modal" title="Compose" class="btn btn-success btn-block">
+													neue Mail schreiben
 													</a>
 													<!-- Modal -->
 													<div aria-hidden="true" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
@@ -189,25 +189,25 @@
 																<div class="modal-body">
 																	<form role="form" class="form-horizontal">
 																		<div class="form-group">
-																			<label class="col-lg-2 control-label">To</label>
+																			<label class="col-lg-2 control-label">An</label>
 																			<div class="col-lg-10">
 																				<input type="text" placeholder="" id="inputEmail1" class="form-control">
 																			</div>
 																		</div>
 																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Cc / Bcc</label>
+																			<label class="col-lg-2 control-label">Cc</label>
 																			<div class="col-lg-10">
 																				<input type="text" placeholder="" id="cc" class="form-control">
 																			</div>
 																		</div>
 																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Subject</label>
+																			<label class="col-lg-2 control-label">Betreff</label>
 																			<div class="col-lg-10">
 																				<input type="text" placeholder="" id="inputPassword1" class="form-control">
 																			</div>
 																		</div>
 																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Message</label>
+																			<label class="col-lg-2 control-label">Nachricht</label>
 																			<div class="col-lg-10">
 																				<textarea class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
 																			</div>
@@ -218,7 +218,7 @@
 																					<input type="file" class="upload">
 																				</div>
 																				
-																				<button class="btn btn-success" type="submit">Send</button>
+																				<button class="btn btn-success" type="submit">Senden</button>
 																			</div>
 																		</div>
 																	</form>
@@ -232,19 +232,19 @@
 												</div>
 												<ul class="inbox-nav mb-30">
 													<li class="active">
-														<a href="#"><i class="zmdi zmdi-inbox"></i> Inbox <span class="label label-danger ml-10">2</span></a>
+														<a href="inbox.html"><i class="zmdi zmdi-inbox"></i> Posteingang <span class="label label-danger ml-10">1</span></a>
 													</li>
 													<li>
-														<a href="#"><i class="zmdi zmdi-email-open"></i> Sent Mail</a>
+														<a href="#"><i class="zmdi zmdi-email-open"></i> Gesendete Nachrichten</a>
 													</li>
 													<li>
-														<a href="#"><i class="zmdi zmdi-bookmark-outline"></i> Important</a>
+														<a href="#"><i class="zmdi zmdi-bookmark-outline"></i> Wichtig</a>
 													</li>
 													<li>
-														<a href="#"><i class="zmdi zmdi-folder-outline"></i> Drafts <span class="label label-info ml-10">30</span></a>
+														<a href="#"><i class="zmdi zmdi-folder-outline"></i> Entw&uuml;rfe <span class="label label-info ml-10">3</span></a>
 													</li>
 													<li>
-														<a href="#"><i class="zmdi zmdi-delete"></i> Trash</a>
+														<a href="#"><i class="zmdi zmdi-delete"></i> Gel&ouml;schte Nachrichten</a>
 													</li>
 												</ul>
 											</aside>
@@ -255,7 +255,7 @@
 													</div>
 													<div class="panel-heading pt-20 pb-20 pl-15 pr-15">
 														<div class="pull-left">
-															<h6 class="panel-title txt-dark">inbox</h6>
+															<h6 class="panel-title txt-dark">Posteingang</h6>
 														</div>
 														<div class="pull-right">
 															<form role="search" class="inbox-search inline-block pull-left mr-15">
@@ -266,64 +266,11 @@
 																	</span>
 																</div>
 															</form>
-															<a href="#" class="pull-left inline-block refresh">
-																<i class="zmdi zmdi-replay"></i>
-															</a>
 														</div>
-														<div class="clearfix"></div>
 													</div>
 													<div class="panel-wrapper collapse in">
 														<div class="panel-body inbox-body pa-0">
 															<div class="mail-option pl-15 pr-15">
-																<div class="chk-all">
-																	<div class="checkbox checkbox-default inline-block">
-																		<input type="checkbox" id="checkbox051"/>
-																		<label for="checkbox051"></label>
-																	</div>
-																	<div class="btn-group">
-																		<a data-toggle="dropdown" href="#" class="btn  all" aria-expanded="false">
-																		All
-																		<i class="fa fa-angle-down "></i>
-																		</a>
-																		<ul class="dropdown-menu">
-																			<li><a href="#"> None</a></li>
-																			<li><a href="#"> Read</a></li>
-																			<li><a href="#"> Unread</a></li>
-																		</ul>
-																	</div>
-																	<div class="btn-group">
-																		<a data-toggle="dropdown" href="#" class="btn  blue">
-																		Move to
-																		<i class="fa fa-angle-down "></i>
-																		</a>
-																		<ul class="dropdown-menu">
-																			<li><a href="#">Personal</a></li>
-																			<li><a href="#">Promotional</a></li>
-																			<li><a href="#">Updates</a></li>
-																		</ul>
-																	</div>
-																	<div class="btn-group">
-																		<a data-toggle="dropdown" href="#" class="btn  blue" aria-expanded="false">
-																		More
-																		<i class="fa fa-angle-down "></i>
-																		</a>
-																		<ul class="dropdown-menu">
-																			<li><a href="#"><i class="fa fa-pencil"></i> Mark as Read</a></li>
-																			<li><a href="#"><i class="fa fa-ban"></i> Spam</a></li>
-																			<li class="divider"></li>
-																			<li><a href="#"><i class="fa fa-trash-o"></i> Delete</a></li>
-																		</ul>
-																	</div>
-																</div>
-																<ul class="unstyled inbox-pagination">
-																	<li><span>1-10 of 234</span></li>
-																	<li>
-																		<a class="pl-15 pr-15" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
-																	</li>
-																	<li>
-																		<a href="#"><i class="fa fa-angle-right pagination-right"></i></a>
-																	</li>
-																</ul>
 															</div>
 															<div class="table-responsive mb-0">
 																<table class="table table-inbox table-hover mb-0">
@@ -337,162 +284,14 @@
 																				<i class="zmdi zmdi-star inline-block font-16"></i>
 																			</td>
 																			<td class="view-message  dont-show">Clay Masse</td>
-																			<td class="view-message ">Added a new class: Login Class Fast Site</td>
+																			<td class="view-message ">
+																				<a href="inbox-detail.html">
+																					Added a new class: Login Class Fast Site
+																				</a>
+																			</td>
 																			<td class="view-message  text-right">
 																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
 																				<span  class="time-chat-history inline-block">9:27 AM</span>
-																			</td>
-																		</tr>
-																		<tr class="unread">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox013"/>
-																					<label for="checkbox013"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Evie Ono</td>
-																			<td class="view-message">Improve the search presence of WebSite
-																			<td class="view-message text-right">
-																				<span  class="time-chat-history inline-block">April 01</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox014"/>
-																					<label for="checkbox014"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Madalyn Rascon</td>
-																			<td class="view-message">Last Chance: Upgrade to Pro for </td>
-																			<td class="view-message text-right">
-																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
-																				<span  class="time-chat-history inline-block">March 15</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox015"/>
-																					<label for="checkbox015"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16 inbox-started"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Mitsuko Heid</td>
-																			<td class="view-message">Boost Your Website Traffic</td>
-																			<td class="view-message text-right">
-																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
-																				<span  class="time-chat-history inline-block">April 01</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox016"/>
-																					<label for="checkbox016"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16 inbox-started"></i>
-																			</td>
-																			<td class="view-message dont-show">Ezequiel Merideth</td>
-																			<td class="view-message">Stop wasting your visitors </td>
-																			<td class="view-message text-right">
-																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
-																				<span  class="time-chat-history inline-block">March 01</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox0116"/>
-																					<label for="checkbox0116"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16"></i>
-																			</td>
-																			<td class="view-message dont-show">Jonnie Madalyn </td>
-																			<td class="view-message">New WOW Slider v7.8 - 67% off</td>
-																			<td class="view-message text-right">
-																				<span  class="time-chat-history inline-block">March 14</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox018"/>
-																					<label for="checkbox018"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16 inbox-started"></i>
-																			</td>
-																			<td class="view-message dont-show">Angelic Lauver</td>
-																			<td class="view-message">The One Sign Your Co-Worker Will Stab</td>
-																			<td class="view-message text-right">
-																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
-																				<span  class="time-chat-history inline-block">Feb 19</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox019"/>
-																					<label for="checkbox019"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Priscila Shy</td>
-																			<td class="view-message view-message">Welcome to the Drupal Community</td>
-																			<td class="view-message text-right">
-																				<span  class="time-chat-history inline-block">March 04</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox022"/>
-																					<label for="checkbox022"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Linda Stack</td>
-																			<td class="view-message view-message">Somebody requested a new password </td>
-																			<td class="view-message text-right">
-																				<span  class="time-chat-history inline-block">June 13</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox032"/>
-																					<label for="checkbox032"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16 inbox-started"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">John Doe</td>
-																			<td class="view-message view-message">Password successfully changed</td>
-																			<td class="view-message text-right">
-																				<span  class="time-chat-history inline-block">April 01</span>
-																			</td>
-																		</tr>
-																		<tr class="">
-																			<td class="inbox-small-cells">
-																				<div class="checkbox checkbox-default inline-block">
-																					<input type="checkbox" id="checkbox0015"/>
-																					<label for="checkbox0015"></label>
-																				</div>
-																				<i class="zmdi zmdi-star inline-block font-16 inbox-started"></i>
-																			</td>
-																			
-																			<td class="view-message dont-show">Mitsuko Heid</td>
-																			<td class="view-message">Boost Your Website Traffic</td>
-																			<td class="view-message text-right">
-																				<i class="zmdi zmdi-attachment inline-block mr-15 font-16"></i>
-																				<span  class="time-chat-history inline-block">April 01</span>
 																			</td>
 																		</tr>
 																		<tr class="">

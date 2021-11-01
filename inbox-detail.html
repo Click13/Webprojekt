@@ -16,255 +16,155 @@
 	<link href="main-style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<!--Preloader-->
-	<div class="preloader-it">
-		<div class="la-anim-1"></div>
-	</div>
-	<!--/Preloader-->
-    <div class="wrapper theme-2-active">
-		<!-- Top Menu Items -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-			<div class="mobile-only-brand pull-left">
-				<div class="nav-header pull-left">
-					<div class="logo-wrap">
-						<a href="index.html">
-							<img class="brand-img" src="dist/img/logo.png" alt="brand"/>
-							<span class="brand-text">MyTicket</span>
-						</a>
-					</div>
-				</div>	
-				<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
-				<a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
-				<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
-				<form id="search_form" role="search" class="top-nav-search collapse pull-left">
-					<div class="input-group">
-						<input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
-						<span class="input-group-btn">
+<!--Preloader-->
+<div class="preloader-it">
+	<div class="la-anim-1"></div>
+</div>
+<!--/Preloader-->
+<div class="wrapper theme-2-active">
+	<!-- Top Menu Items -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="mobile-only-brand pull-left">
+			<div class="nav-header pull-left">
+				<div class="logo-wrap">
+					<a href="index.html">
+						<img class="brand-img" src="dist/img/logo.png" alt="brand"/>
+						<span class="brand-text">MyTicket</span>
+					</a>
+				</div>
+			</div>
+			<a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu"></i></a>
+			<a id="toggle_mobile_search" data-toggle="collapse" data-target="#search_form" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-search"></i></a>
+			<a id="toggle_mobile_nav" class="mobile-only-view" href="javascript:void(0);"><i class="zmdi zmdi-more"></i></a>
+			<form id="search_form" role="search" class="top-nav-search collapse pull-left">
+				<div class="input-group">
+					<input type="text" name="example-input1-group2" class="form-control" placeholder="Search">
+					<span class="input-group-btn">
 						<button type="button" class="btn  btn-default"  data-target="#search_form" data-toggle="collapse" aria-label="Close" aria-expanded="true"><i class="zmdi zmdi-search"></i></button>
 						</span>
-					</div>
-				</form>
-			</div>
-			<div id="mobile_only_nav" class="mobile-only-nav pull-right">
-				<ul class="nav navbar-right top-nav pull-right">
-					<li class="dropdown auth-drp">
-						<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
-						<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+				</div>
+			</form>
+		</div>
+		<div id="mobile_only_nav" class="mobile-only-nav pull-right">
+			<ul class="nav navbar-right top-nav pull-right">
+				<li class="dropdown auth-drp">
+					<a href="#" class="dropdown-toggle pr-0" data-toggle="dropdown"><img src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png" alt="user_auth" class="user-auth-img img-circle"/><span class="user-online-status"></span></a>
+					<ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
+						<li>
+							<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+						</li>
+						<li class="divider"></li>
+						<li class="sub-menu show-on-hover">
+							<a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i> available</a>
+							<ul class="dropdown-menu open-left-side">
+								<li>
+									<a href="#"><i class="zmdi zmdi-check text-success"></i><span>available</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="zmdi zmdi-circle-o text-warning"></i><span>busy</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="divider"></li>
+						<li>
+							<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<!-- /Top Menu Items -->
+	<!-- Left Sidebar Menu -->
+	<div class="fixed-sidebar-left">
+		<ul class="nav navbar-nav side-nav nicescroll-bar">
+
+			<li>
+				<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-laptop mr-20"></i><span class="basic-text" class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+				<ul id="dashboard_dr" class="collapse collapse-level-1">
+					<li>
+						<a  href="project-page.html" class="basic-text">Projekt&uuml;bersicht</a>
+					</li>
+					<li>
+						<a href="calendar.html">Kalender</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#email_dr">Email<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+						<ul id="email_dr" class="collapse collapse-level-2">
 							<li>
-								<a href="profile.html"><i class="zmdi zmdi-account"></i><span>Profile</span></a>
+								<a href="inbox.html">Posteingang</a>
 							</li>
 							<li>
-								<a href="inbox.html"><i class="zmdi zmdi-email"></i><span>Inbox</span></a>
-							</li>
-							<li class="divider"></li>
-							<li class="sub-menu show-on-hover">
-								<a href="#" class="dropdown-toggle pr-0 level-2-drp"><i class="zmdi zmdi-check text-success"></i> available</a>
-								<ul class="dropdown-menu open-left-side">
-									<li>
-										<a href="#"><i class="zmdi zmdi-check text-success"></i><span>available</span></a>
-									</li>
-									<li>
-										<a href="#"><i class="zmdi zmdi-circle-o text-warning"></i><span>busy</span></a>
-									</li>
-									<li>
-										<a href="#"><i class="zmdi zmdi-minus-circle-outline text-danger"></i><span>offline</span></a>
-									</li>
-								</ul>	
-							</li>
-							<li class="divider"></li>
-							<li>
-								<a href="#"><i class="zmdi zmdi-power"></i><span>Log Out</span></a>
+								<a href="spam.html">Spam</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
-			</div>	
-		</nav>
-		<!-- /Top Menu Items -->
-		<!-- Left Sidebar Menu -->
-		<div class="fixed-sidebar-left">
-			<ul class="nav navbar-nav side-nav nicescroll-bar">
-				<li class="navigation-header">
-					<span>Main</span> 
-					<i class="zmdi zmdi-more"></i>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><div class="pull-left"><i class="zmdi zmdi-landscape mr-20"></i><span class="right-nav-text">Dashboard</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="dashboard_dr" class="collapse collapse-level-1">
-						<li>
-							<a href="index.html">Analytical</a>
-						</li>
-						<li>
-							<a href="index2.html">Demographic</a>
-						</li>
-						<li>
-							<a href="index3.html">Project</a>
-						</li>
-						<li>
-							<a href="profile.html">profile</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ecom_dr"><div class="pull-left"><i class="zmdi zmdi-shopping-basket mr-20"></i><span class="right-nav-text">E-Commerce</span></div><div class="pull-right"><span class="label label-success">hot</span></div><div class="clearfix"></div></a>
-					<ul id="ecom_dr" class="collapse collapse-level-1">
-						<li>
-							<a href="e-commerce.html">Dashboard</a>
-						</li>
-						<li>
-							<a href="product.html">Products</a>
-						</li>
-						<li>
-							<a href="product-detail.html">Product Detail</a>
-						</li>
-						<li>
-							<a href="add-products.html">Add Product</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#ui_dr"><div class="pull-left"><i class="zmdi zmdi-smartphone-setup mr-20"></i><span class="right-nav-text">UI Elements</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="ui_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="panels-wells.html">Panels &amp; Wells</a>
-						</li>
-						<li>
-							<a href="modals.html">Modals</a>
-						</li>
-						<li>
-							<a href="sweetalert.html">Sweet Alerts</a>
-						</li>
-						<li>
-							<a href="notifications.html">notifications</a>
-						</li>
-						<li>
-							<a href="typography.html">Typography</a>
-						</li>
-						<li>
-							<a href="buttons.html">Buttons</a>
-						</li>
-						<li>
-							<a href="accordion-toggle.html">Accordion / Toggles</a>
-						</li>
-						<li>
-							<a href="tabs.html">Tabs</a>
-						</li>
-						<li>
-							<a href="progressbars.html">Progress bars</a>
-						</li>
-						<li>
-							<a href="skills-counter.html">Skills &amp; Counters</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#form_dr"><div class="pull-left"><i class="zmdi zmdi-edit mr-20"></i><span class="right-nav-text">Forms</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="form_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="form-element.html">Basic Forms</a>
-						</li>
-						<li>
-							<a href="form-layout.html">form Layout</a>
-						</li>
-						<li>
-							<a href="form-advanced.html">Form Advanced</a>
-						</li>
-						<li>
-							<a href="form-mask.html">Form Mask</a>
-						</li>
-						<li>
-							<a href="form-picker.html">Form Picker</a>
-						</li>
-						<li>
-							<a href="form-validation.html">form Validation</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#table_dr"><div class="pull-left"><i class="zmdi zmdi-format-size mr-20"></i><span class="right-nav-text">Tables</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="table_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a href="basic-table.html">Basic Table</a>
-						</li>
-						<li>
-							<a href="bootstrap-table.html">Bootstrap Table</a>
-						</li>
-						<li>
-							<a href="data-table.html">Data Table</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#icon_dr"><div class="pull-left"><i class="zmdi zmdi-iridescent mr-20"></i><span class="right-nav-text">Icons</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="icon_dr" class="collapse collapse-level-1">
-						<li>
-							<a href="fontawesome.html">Fontawesome</a>
-						</li>
-						<li>
-							<a href="themify.html">Themify</a>
-						</li>
-						<li>
-							<a href="linea-icon.html">Linea</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="javascript:void(0);" data-toggle="collapse" data-target="#pages_dr"><div class="pull-left"><i class="zmdi zmdi-google-pages mr-20"></i><span class="right-nav-text">Special Pages</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-					<ul id="pages_dr" class="collapse collapse-level-1 two-col-list">
-						<li>
-							<a class="active" href="blank.html">Blank Page</a>
-						</li>
-						<li>
-							<a href="javascript:void(0);" data-toggle="collapse" data-target="#auth_dr">Authantication pages<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
-							<ul id="auth_dr" class="collapse collapse-level-2">
-								<li>
-									<a href="login.html">Login</a>
-								</li>
-								<li>
-									<a href="signup.html">Register</a>
-								</li>
-								<li>
-									<a href="forgot-password.html">Recover Password</a>
-								</li>
-								<li>
-									<a href="reset-password.html">reset Password</a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a href="gallery.html">Gallery</a>
-						</li>
-						<li>
-							<a href="timeline.html">Timeline</a>
-						</li>
-						<li>
-							<a href="faq.html">FAQ</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="documentation.html"><div class="pull-left"><i class="zmdi zmdi-book mr-20"></i><span class="right-nav-text">documentation</span></div><div class="clearfix"></div></a>
-				</li>
-			</ul>
-		</div>
-		<!-- /Left Sidebar Menu -->
-		<!-- Right Sidebar Backdrop -->
-		<div class="right-sidebar-backdrop"></div>
-		<!-- /Right Sidebar Backdrop -->
+			</li>
+			<li>
+				<a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><div class="pull-left"><i class="zmdi zmdi-folder mr-20"></i><span class="basic-text" class="right-nav-text">Projekte</span></div><div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+				<ul id="app_dr" class="collapse collapse-level-1">
+					<li>
+						<a href="javascript:void(0);" data-toggle="collapse" data-target="#contact_dr">Projekt&uuml;bersicht<div class="pull-right"><i class="zmdi zmdi-caret-down"></i></div><div class="clearfix"></div></a>
+						<ul id="contact_dr" class="collapse collapse-level-2">
+							<li>
+								<a href="empty">Projekte verwalten</a>
+							</li>
+							<li>
+								<a href="empty">Projekte hinzuf&uuml;gen</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="Datenschutz.html" >
+					<div class="pull-left">
+						<i class="zmdi zmdi-phone mr-20">
+						</i>
+						<span class="basic-text" class="right-nav-text">
+                            Datenschutz
+                        </span>
+					</div>
+					<div class="pull-right">
+					</div>
+					<div class="clearfix">
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="Impressum.html">
+					<div class="pull-left">
+						<i class="zmdi zmdi-info mr-20">
+						</i>
+						<span class="basic-text" class="right-nav-text">
+								Impressum
+							</span>
+					</div>
+					<div class="clearfix">
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /Left Sidebar Menu -->
         <!-- Main Content -->
 		<div class="page-wrapper">
             <div class="container-fluid">
 				<!-- Title -->
 				<div class="row heading-bg">
 					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
-					  <h5 class="txt-dark">inbox-detail</h5>
+					  <h5 class="txt-dark">Einzelansicht - Posteingang</h5>
 					</div>
 					<!-- Breadcrumb -->
 					<div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
 					  <ol class="breadcrumb">
-						<li><a href="index.html">Dashboard</a></li>
-						<li><a href="#"><span>apps</span></a></li>
-						<li class="active"><span>inbox-detail</span></li>
+						<li>Dashboard</li>
+						<li><a href="inbox.html"><span>Posteingang</span></a></li>
+						<li class="active"><span>Einzelansicht - Posteingang</span></li>
 					  </ol>
 					</div>
 					<!-- /Breadcrumb -->
@@ -280,71 +180,11 @@
 										<div class="row">
 											<aside class="col-lg-3 col-md-4 pr-0">
 												<div class="mt-20 mb-20 ml-15 mr-15">
-													<a href="#myModal" data-toggle="modal"  title="Compose"    class="btn btn-success btn-block">
-													Compose
-													</a>
-													<!-- Modal -->
-													<div aria-hidden="true" role="dialog" tabindex="-1" id="myModal" class="modal fade" style="display: none;">
-														<div class="modal-dialog">
-															<div class="modal-content">
-																<div class="modal-header">
-																	<button aria-hidden="true" data-dismiss="modal" class="close" type="button">&times;</button>
-																	<h4 class="modal-title">Compose</h4>
-																</div>
-																<div class="modal-body">
-																	<form role="form" class="form-horizontal">
-																		<div class="form-group">
-																			<label class="col-lg-2 control-label">To</label>
-																			<div class="col-lg-10">
-																				<input type="text" placeholder="" id="inputEmail1" class="form-control">
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Cc / Bcc</label>
-																			<div class="col-lg-10">
-																				<input type="text" placeholder="" id="cc" class="form-control">
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Subject</label>
-																			<div class="col-lg-10">
-																				<input type="text" placeholder="" id="inputPassword1" class="form-control">
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<label class="col-lg-2 control-label">Message</label>
-																			<div class="col-lg-10">
-																				<textarea class="textarea_editor form-control" rows="15" placeholder="Enter text ..."></textarea>
-																			</div>
-																		</div>
-																		<div class="form-group">
-																			<div class="col-lg-offset-2 col-lg-10">
-																				<div class="fileupload btn btn-info btn-anim mr-10"><i class="zmdi zmdi-attachment"></i><span class="btn-text">attachments</span>
-																					<input type="file" class="upload">
-																				</div>
-																				
-																				<button class="btn btn-success" type="submit">Send</button>
-																			</div>
-																		</div>
-																	</form>
-																</div>
-															</div>
-															<!-- /.modal-content -->
-														</div>
-														<!-- /.modal-dialog -->
-													</div>
-													<!-- /.modal -->
 												</div>
 											</aside>
 											<aside class="col-lg-9 col-md-8 pl-0">
 												<div class="panel panel-refresh pa-0">
-													<div class="refresh-container">
-														<div class="la-anim-1"></div>
-													</div>
 													<div class="panel-heading pt-20 pb-20 pl-15 pr-15">
-														<div class="pull-left">
-															<h6 class="panel-title txt-dark">inbox</h6>
-														</div>
 														<div class="pull-right">
 															<form role="search" class="inbox-search inline-block pull-left mr-15">
 																<div class="input-group">
@@ -375,42 +215,41 @@
 																		<div class="inline-block dropdown">
 																			<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi zmdi-more"></i></a>
 																			<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Mark as Unread</a></li>
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Mark as Important</a></li>
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Report Spam</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>ungelesen</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>wichtig</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Spam</a></li>
 																			</ul>
 																		</div>
-										
 																	</div>
 																</div>
 																<hr class="light-grey-hr mt-10 mb-15"/>
 																<div class="container-fluid mb-20">	
-																	<h4 class="weight-500"> Donec vitae leo at sem lobortis porttitor eu consequat risus.</h4>
+																	<h4 class="weight-500"> Added a new class: Login Class Fast Site</h4>
 																</div>	
 															</div>
 															<div class="sender-info">
 																<div class="container-fluid">
 																	<div class="sender-img-wrap pull-left mr-20">
-																		<img class="sender-img" alt="user" src="dist/img/user1.png">
+																		<img class="sender-img" alt="user" src="https://img.icons8.com/external-wanicon-two-tone-wanicon/64/000000/external-profile-user-interface-wanicon-two-tone-wanicon.png">
 																	</div>
 																	<div class="sender-details   pull-left">
-																		<span class="capitalize-font pr-5 txt-dark block font-15 weight-500 head-font">John Doe</span>
+																		<span class="capitalize-font pr-5 txt-dark block font-15 weight-500 head-font">Clay Masse</span>
 																		<span class="block">
-																			to
-																			<span>me</span>
+																			an
+																			<span>mich</span>
 																		</span>	
 																	</div>	
 																	<div class="pull-right">
 																		<div class="inline-block mr-5">
-																			<span class="inbox-detail-time-1 font-12">10:06 AM</span>
+																			<span class="inbox-detail-time-1 font-12">9:27 AM</span>
 																			<span class="inbox-detail-time-2 font-12 inline-block">(2 hours ago)</span>
 																		</div>
 																		<div class="inline-block dropdown">
 																			<a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false" role="button"><i class="zmdi   zmdi-more-vert"></i></a>
 																			<ul class="dropdown-menu bullet dropdown-menu-right"  role="menu">
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>Reply</a></li>
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>Forward</a></li>
-																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>Delete</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-reply" aria-hidden="true"></i>antworten</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-share" aria-hidden="true"></i>weiterleiten</a></li>
+																				<li role="presentation"><a href="javascript:void(0)" role="menuitem"><i class="icon wb-trash" aria-hidden="true"></i>l&ouml;schen</a></li>
 																			</ul>
 																		</div>
 																	</div>
@@ -418,24 +257,24 @@
 																</div>
 															</div>
 															<div class="container-fluid view-mail mt-20">
-																<p>Faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. </p>
-																<p>Consequat risus. Mauris sed congue orci. Donec ultrices <a href="#">flatlab</a>. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec
-																	<a href="#">vitae leo at sem lobortis porttitor eu consequat risus</a>. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. 
+																<p>Hi Madalyn,</p>
+																<p>ich habe endlich die neue Logoin-Classe fertig gestellt. Deine Anregungen haben mir dabei sehr geholfen.<br>
+																	Bitte sieh dir die Klasse an, bevor ich den Entwicklungsbranch schlie&szlig;e.
 																</p>
-																<p>Modales vulputate urna, vel <a href="#">templatemonster.com</a>. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. Donec ultrices faucibus rutrum. Phasellus sodales vulputate urna, vel accumsan augue egestas ac. Donec vitae leo at sem lobortis porttitor eu consequat risus. Mauris sed congue orci. </p>
+																Clay
 															</div>
 															<hr class="light-grey-hr mt-20 mb-20"/>
 															<div class="container-fluid attachment-mail mt-40 mb-40">
 																<div class="download-blocks mb-20">
-																	<span class="pr-15"><i class="zmdi zmdi-attachment-alt pr-10"></i>3 attachments</span>
-																	<a href="#"><i class="zmdi zmdi-download pr-10"></i>Download</a>
+																	<span class="pr-15"><i class="zmdi zmdi-attachment-alt pr-10"></i>3 Anh&auml;nge</span>
+																	<a href="#"><i class="zmdi zmdi-download pr-10"></i>herunterladen</a>
 																</div>
 																<ul>
 																	<li>
 																		<a href="#" class="atch-thumb">
 																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock1.jpg)"></div>
 																			<div class="file-name">
-																				Image 1
+																				Anhang 1
 																			</div>
 																		</a>
 																	</li>
@@ -443,7 +282,7 @@
 																		<a href="#" class="atch-thumb">
 																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock2.jpg)"></div>
 																			<div class="file-name">
-																				Image 2
+																				Anhang 2
 																			</div>
 																		</a>
 																	</li>
@@ -451,7 +290,7 @@
 																		<a href="#" class="atch-thumb">
 																			<div class="attached-img-container" style="background-image:url(dist/img/gallery/equal-size/mock3.jpg)"></div>
 																			<div class="file-name">
-																				Image 3
+																				Anhang 3
 																			</div>
 																		</a>
 																	</li>
@@ -474,7 +313,7 @@
 			<footer class="footer container-fluid pl-30 pr-30">
 				<div class="row">
 					<div class="col-sm-12">
-						<p>2017 &copy; Flintstone. Pampered by Hencework</p>
+						<p>2021 &copy; MyTicket</p>
 					</div>
 				</div>
 			</footer>
